@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkiSupport - Assistance en ligne</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="chat-bubble">
+        <i class="bi bi-chat-dots"></i>
+    </div>
+
+    <div id="chat-dialog">
+        <div id="chat-header">
+            <h3>AkiSupport</h3>
+            <button id="close-chat" class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <div class="input-group mb-3">
+                <input type="text" id="user-input" class="form-control" placeholder="Tapez votre message...">
+                <button class="btn btn-primary" type="button" id="send-btn">Envoyer</button>
+            </div>
+            <div class="d-flex flex-wrap">
+                <button class="btn btn-outline-secondary btn-sm me-2 mb-2 preset-btn">Bonjour</button>
+                <button class="btn btn-outline-secondary btn-sm me-2 mb-2 preset-btn">Tarifs</button>
+                <button class="btn btn-outline-secondary btn-sm me-2 mb-2 preset-btn">Support</button>
+                <button class="btn btn-outline-secondary btn-sm me-2 mb-2 preset-btn">Fonctionnalités</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
