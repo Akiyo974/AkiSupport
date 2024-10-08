@@ -3,9 +3,13 @@ import stringSimilarity from 'string-similarity';
 
 const responses = {
     'bonjour': 'Bonjour ! Comment puis-je vous aider aujourd\'hui ?',
-    'tarifs': 'Nos tarifs commencent à 9,99 € par mois. Voulez-vous plus de détails ?',
-    'support': 'Pour le support, veuillez nous envoyer un e-mail à support@akisupport.com ou appelez le 01 23 45 67 89.',
-    'fonctionnalités': 'Il n\'y en a pas mais vous pouvez toujours nous en proposer',
+    'tarifs': 'L’adhésion coûte 10$ une fois que votre formulaire est approuvé. Souhaitez-vous soumettre une demande ?',
+    'échange d\'heures': 'Les échanges se font par l’intermédiaire de notre plateforme. Vous pouvez offrir ou demander un service, et la banque d’heures est mise à jour automatiquement.',
+    'mot de passe': 'Pas de souci ! Cliquez sur "Mot de passe oublié" sur la page de connexion pour recevoir un lien de réinitialisation.',
+    'mettre à jour profil': 'Pour modifier votre profil ou vos services, connectez-vous à votre compte et allez dans l’onglet "Mon profil". Vous pourrez y faire des ajustements facilement.',
+    'types de services': 'Vous pouvez proposer ou demander des services dans 13 catégories, comme l’entretien, la cuisine, la gestion, ou encore des conseils technologiques.',
+    'contacter un membre': 'Une fois connecté, vous pouvez utiliser la messagerie interne pour contacter les membres. Si vous avez besoin d’aide, n’hésitez pas à nous demander.',
+    'problèmes plateforme': 'Vous pouvez nous contacter directement par courriel à partages@aqdralma.com ou par téléphone au 418 480-1122.',
 };
 
 const keywords = Object.keys(responses);
@@ -84,5 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    setTimeout(() => addMessage("Bienvenue sur AkiSupport ! Comment puis-je vous aider aujourd'hui ?"), 1000);
+    setTimeout(() => addMessage("Bienvenue sur le site des Partag'heures ! Comment puis-je vous aider aujourd'hui ?"), 1000);
 });
